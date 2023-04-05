@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "972106369030",
+    "project_id": "affirmation-c531b",
+    "storage_bucket": "affirmation-c531b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972106369030:android:a6718662c5739b96821b87",
+        "android_client_info": {
+          "package_name": "com.example.i_am_v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "972106369030-qvhgu20a3gj3k6br784np7m1f4nodfd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk3jE3zeF9gCn_RYS__8ZgX60SpsxM1OY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972106369030-qvhgu20a3gj3k6br784np7m1f4nodfd2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "972106369030-t2dlipb5sl091emvst44kijtembk29fj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.iAmV2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
