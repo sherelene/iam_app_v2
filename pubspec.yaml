@@ -35,6 +35,11 @@ dependencies:
   #BloC
   flutter_bloc: ^7.0.1
 
+  # Page View dots indicator
+  dots_indicator: ^2.0.0
+
+  #  Percent circle
+  percent_indicator: ^3.0.1
 
 
 
