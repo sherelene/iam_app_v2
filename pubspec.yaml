@@ -55,7 +55,23 @@ dependencies:
   #for splash screen
   splashscreen: ^1.3.5
 
+  # Workout Details sliding up panel
+  sliding_up_panel: ^2.0.0+1
 
+  # Countdown timer
+  custom_timer: ^0.0.6
+
+  # Image library
+  image_picker: ^0.8.2
+
+  # Reminder notification
+  flutter_local_notifications: ^8.0.0
+
+  # Native timezone
+  flutter_native_timezone: ^2.0.0
+
+  # Permission handler
+  permission_handler: ^8.1.4+2
 
 dev_dependencies:
   flutter_test:
