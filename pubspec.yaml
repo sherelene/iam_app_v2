@@ -35,6 +35,11 @@ dependencies:
   #BloC
   flutter_bloc: ^7.0.1
 
+  # Firebase
+  firebase_core: ^1.4.0
+  firebase_storage: ^10.0.1
+  #flutter_secure_storage: ^4.2.1
+
   # Page View dots indicator
   dots_indicator: ^2.0.0
 
@@ -49,7 +54,8 @@ dependencies:
 
   #for splash screen
   splashscreen: ^1.3.5
-  firebase_core: ^2.9.0
+
+
 
 dev_dependencies:
   flutter_test:
