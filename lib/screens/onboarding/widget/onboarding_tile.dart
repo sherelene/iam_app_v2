@@ -18,7 +18,7 @@ class OnboardingTile extends StatelessWidget {
               imagePath,
             ),
           ),
-          const SizedBox(height: 65),
+          const SizedBox(height: 35),
           Text(
             title,
             style: TextStyle(

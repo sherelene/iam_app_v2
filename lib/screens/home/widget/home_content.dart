@@ -33,9 +33,9 @@ class HomeContent extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 20),
         children: [
           _createProfileData(context),
-          const SizedBox(height: 35),
+          const SizedBox(height: 25),
           HomeStatistics(),
-          const SizedBox(height: 30),
+          const SizedBox(height: 20),
           _createExercisesList(context),
           const SizedBox(height: 25),
           _createProgress(),
@@ -126,16 +126,16 @@ class HomeContent extends StatelessWidget {
                 child: photoUrl == null
                     ? CircleAvatar(
                     backgroundImage: AssetImage(PathConstants.profile),
-                    radius: 60)
+                    radius: 40)
                     : CircleAvatar(
                     child: ClipOval(
                         child: FadeInImage.assetNetwork(
                             placeholder: PathConstants.profile,
                             image: photoUrl,
                             fit: BoxFit.cover,
-                            width: 200,
-                            height: 120)),
-                    radius: 25),
+                            width: 160,
+                            height: 80)),
+                    radius: 20),
                 onTap: () async {
                   await Navigator.of(context).push(
                       MaterialPageRoute(builder: (_) => EditAccountScreen()));
