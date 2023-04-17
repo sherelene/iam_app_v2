@@ -49,3 +49,4 @@ class WorkoutContent extends StatelessWidget {
       child: WorkoutCard(workout: workoutData),
     );
   }
+}

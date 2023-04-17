@@ -44,7 +44,7 @@ class _MyAppState extends State<MyApp> {
       title: 'Fitness',
       theme: ThemeData(
         textTheme: TextTheme(bodyText1: TextStyle(color: ColorConstants.textColor)),
-        fontFamily: 'NotoSansKR',
+        fontFamily: 'NotoSans',
         scaffoldBackgroundColor: Colors.white,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
@@ -63,4 +63,5 @@ class _MyAppState extends State<MyApp> {
       },
     );
   }
+
 }

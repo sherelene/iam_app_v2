@@ -86,7 +86,7 @@ class StartWorkoutContent extends StatelessWidget {
       height: 264,
       width: double.infinity,
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: ColorConstants.white),
-      child: StartWorkoutVideo(
+      /*child: StartWorkoutVideo(
         exercise: exercise,
         onPlayTapped: (time) {
           bloc.add(PlayTappedEvent(time: time));
@@ -94,7 +94,7 @@ class StartWorkoutContent extends StatelessWidget {
         onPauseTapped: (time) {
           bloc.add(PauseTappedEvent(time: time));
         },
-      ),
+      ),*/
     );
   }
 

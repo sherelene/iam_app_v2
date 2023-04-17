@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:fitness_flutter/data/workout_data.dart';
+import 'package:i_am_v2/data/workout_data.dart';
 import 'package:meta/meta.dart';
 
 part 'workouts_event.dart';

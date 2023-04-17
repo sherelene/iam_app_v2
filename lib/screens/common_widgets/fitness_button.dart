@@ -35,3 +35,5 @@ class FitnessButton extends StatelessWidget {
         ),
       ),
     );
+  }
+}

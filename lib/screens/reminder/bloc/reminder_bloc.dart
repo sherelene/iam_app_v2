@@ -37,12 +37,11 @@ class ReminderBloc extends Bloc<ReminderEvent, ReminderState> {
     final flutterNotificationsPlugin = FlutterLocalNotificationsPlugin();
     final androidPlatformChannelSpecifics = AndroidNotificationDetails(
         'your other channel id',
-        'your other channel name',
-        'your other channel description');
-    final iOSPlatformChannelSpecifics = IOSNotificationDetails();
+        'your other channel name');
+    final iOSPlatformChannelSpecifics = IOSInitializationSettings();
     NotificationDetails platformChannelSpecifics = NotificationDetails(
         android: androidPlatformChannelSpecifics,
-        iOS: iOSPlatformChannelSpecifics);
+        );
 
     await flutterNotificationsPlugin.zonedSchedule(
       1,

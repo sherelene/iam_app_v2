@@ -1,13 +1,14 @@
 import 'dart:async';
 
-import 'package:chewie/chewie.dart';
+//import 'package:chewie/chewie.dart';
 import 'package:i_am_v2/core/const/color_constants.dart';
 import 'package:i_am_v2/data/exercise_data.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
-import 'package:video_player/video_player.dart';
+//import 'package:video_player/video_player.dart';
 import 'package:flutter/material.dart';
 
+/*
 class StartWorkoutVideo extends StatefulWidget {
   final ExerciseData exercise;
   final Function(int) onPlayTapped;
@@ -66,6 +67,7 @@ class _StartWorkoutVideoState extends State<StartWorkoutVideo> {
       child: Theme(data: Theme.of(context).copyWith(platform: TargetPlatform.android), child: Chewie(controller: _chewieController)),
     );
   }
+*/
 
 // Widget _createPlayButton() {
 //   return Center(
@@ -117,4 +119,4 @@ class _StartWorkoutVideoState extends State<StartWorkoutVideo> {
 
 //   return duration - position;
 // }
-}
+//}

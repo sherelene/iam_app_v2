@@ -1,6 +1,6 @@
-import 'package:fitness_flutter/screens/onboarding/bloc/onboarding_bloc.dart';
-import 'package:fitness_flutter/screens/onboarding/widget/onboarding_content.dart';
-import 'package:fitness_flutter/screens/sign_up/page/sign_up_page.dart';
+import 'package:i_am_v2/screens/onboarding/bloc/onboarding_bloc.dart';
+import 'package:i_am_v2/screens/onboarding/widget/onboarding_content.dart';
+import 'package:i_am_v2/screens/sign_up/page/sign_up_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
