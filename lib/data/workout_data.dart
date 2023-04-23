@@ -1,5 +1,20 @@
 import 'package:i_am_v2/data/exercise_data.dart';
 
+
+class textList{
+
+  final List<textList> IAMList;
+
+  textList({
+    required this.IAMList,
+  });
+
+  @override
+  String toString() {
+    return 'textList($IAMList)';
+  }
+}
+
 class WorkoutData {
   final String title;
   final String exercices;

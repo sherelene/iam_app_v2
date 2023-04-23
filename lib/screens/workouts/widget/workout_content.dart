@@ -3,12 +3,12 @@ import 'package:i_am_v2/core/const/data_constants.dart';
 import 'package:i_am_v2/data/workout_data.dart';
 import 'package:i_am_v2/screens/workouts/widget/workout_card.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
 import 'package:i_am_v2/screens/TTS/TTS.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class WorkoutContent extends StatelessWidget {
-  WorkoutContent({Key? key}) : super(key: key);
+ // WorkoutContent({Key? key}) : super(key: key);
+ const WorkoutContent({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,6 @@ class WorkoutContent extends StatelessWidget {
 
   Widget _createHomeBody(BuildContext context) {
   var textController = TextEditingController();
-
   return Scaffold(
     body: Column(
       mainAxisAlignment: MainAxisAlignment.center,

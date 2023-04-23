@@ -19,6 +19,6 @@ class ColorConstants {
   static const homeBackgroundColor = Color.fromRGBO(252, 252, 252, 1);
   static const textGrey = Color(0xFF8F98A3);
 
-  static const cardioColor = Color(0xFFFCB74F);
-  static const armsColor = Color(0xFF5C9BA4);
+  static const affirmationColor = Color.fromRGBO(153, 204, 255, 1);
+  static const armsColor = Color.fromRGBO(153, 204, 153, 1);//Color(0xFF5C9BA4);
 }

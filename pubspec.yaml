@@ -77,6 +77,7 @@ dependencies:
 
   # Text to speech
   flutter_tts: ^3.6.3
+  csv: ^5.0.1
 
 
 dev_dependencies:
@@ -118,6 +119,8 @@ flutter:
     - assets/icons/workouts/
     - assets/icons/social_networks/
     - assets/videos/workouts/
+    - assets/IAM.txt
+    - assets/images/images/background/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

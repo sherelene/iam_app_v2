@@ -3,6 +3,8 @@ import 'package:i_am_v2/core/const/text_constants.dart';
 import 'package:i_am_v2/data/exercise_data.dart';
 import 'package:i_am_v2/data/workout_data.dart';
 import 'package:i_am_v2/screens/onboarding/widget/onboarding_tile.dart';
+import 'dart:async' show Future;
+import 'package:flutter/services.dart' show rootBundle;
 
 class DataConstants {
   // Onboarding
@@ -257,4 +259,14 @@ class DataConstants {
     TextConstants.saturday,
     TextConstants.sunday,
   ];
+
+
+  // Affirmations
+  static final List<String> textData=
+ ["I am becoming a better version of myself",
+  "I am kind",
+  "I am confident",
+  "I am intelligent",
+  "I am determined and value hard work"];
+
 }

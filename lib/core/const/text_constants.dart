@@ -1,3 +1,6 @@
+import 'package:i_am_v2/core/const/text.dart';
+import 'package:collection/collection.dart';
+
 class TextConstants {
   // Common
   static const String start = "Start";
@@ -22,7 +25,7 @@ class TextConstants {
 
   static const String email = "Email";
   static const String emailPlaceholder = "example@mail.com";
-  static const String emailErrorText = 'Email is unvalid, please enter email properly';
+  static const String emailErrorText = 'Email is invalid, please enter email properly';
 
   static const String password = "Password";
   static const String passwordPlaceholder = "Must be at least 6 symbols";
@@ -42,11 +45,11 @@ class TextConstants {
 
   // Tab bar
   static const String homeIcon = "Home";
-  static const String workoutsIcon = "Workouts";
+  static const String workoutsIcon = "Voice";
   static const String settingsIcon = "Settings";
 
   // Home screen
-  static const String checkActivity = "Let's check your activity";
+  static const String checkActivity = "Let's change your reality";
   static const String finished = "Finished";
   static const String completedWorkouts = "Completed workouts";
 
@@ -151,7 +154,7 @@ class TextConstants {
   static const String changePassword = 'Change Password';
 
   // Edit account screen -> show settings
-  static const String cameraPermission = 'Camera permisson';
+  static const String cameraPermission = 'Camera permission';
   static const String cameAccess = 'This app needs camera access to take pictures for upload user profile photo';
   static const String deny = 'Deny';
   static const String settings = 'Settings';
@@ -165,4 +168,7 @@ class TextConstants {
   static const passwordReset = 'Password Reset';
   static const sendActivationBuild = 'Send Activation Link';
   static const resetPasswordLinkWasSent = 'Reset password link was sent on your email.';
+
+  String dailyText = textData.sample(1).single;
+  String dailyQuote = quoteData.sample(1).single;
 }
