@@ -66,7 +66,7 @@ class AffirmationPage extends StatelessWidget {
                           maxLines: 1,
                           style: const TextStyle(
                             color: ColorConstants.white,
-                            fontSize: 20,
+                            fontSize: 17,
                             fontWeight: FontWeight.w500,
                           ),
                         ),

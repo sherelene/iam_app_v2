@@ -6,7 +6,8 @@ import 'dart:math';
 
 
 var textData=
-["\"I am becoming a better version of myself\"",
+["\"I forgive myself for my past mistakes, for my downfalls, and I release all of the heavy feelings I carry because I am worthy of peace and forgiveness\"",
+    "\"I am becoming a better version of myself\"",
   "\"I am kind\"",
   "\"I am confident\"",
   "\"I am intelligent\"",

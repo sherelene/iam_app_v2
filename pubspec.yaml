@@ -126,6 +126,8 @@ flutter:
     - assets/videos/workouts/
     - assets/IAM.txt
     - assets/images/images/background/
+    - assets/images/icons/
+    - assets/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
