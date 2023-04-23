@@ -4,12 +4,17 @@ import 'package:collection/collection.dart';
 import 'package:csv/csv.dart';
 import 'dart:math';
 
+
 var textData=
 ["\"I am becoming a better version of myself\"",
   "\"I am kind\"",
   "\"I am confident\"",
   "\"I am intelligent\"",
   "\"I am determined and value hard work\""];
+
+Random random = new Random();
+int randomNumber = random.nextInt(4);
+String affirmationList = textData[randomNumber];
 
 var quoteData=
     ["\"The road to success and the road to failure are almost exactly the same.\" — Colin R. Davis",
@@ -19,26 +24,41 @@ var quoteData=
 "\"There are three ways to ultimate success: The first way is to be kind. The second way is to be kind. The third way is to be kind.\" —Mister Rogers"
 ];
 
-
-List<List<String>> data = [];
-loadAsset() async {
-  final myData = await rootBundle.loadString("assets/affirmations.csv");
-  List<List<String>> csvTable = CsvToListConverter().convert(myData);
-
-  data = csvTable;
-}
-Random random = new Random();
-int randomNumber = random.nextInt(109);
-var affirmationList = data[randomNumber][0];
-
-List<List<String>> data2 = [];
-loadAsset2() async {
-  final myData2 = await rootBundle.loadString("assets/quotes.csv");
-  List<List<String>> csvTable2 = CsvToListConverter().convert(myData2);
-
-  data2 = csvTable2;
-}
-
 Random random2 = new Random();
-int randomNumber2 = random.nextInt(7);
-var quoteList = data2[randomNumber2][0];
+int randomNumber2 = random2.nextInt(4);
+String quoteList = quoteData[randomNumber2];
+
+
+// List<String> data = [];
+// loadAsset() async {
+//   final myData = await rootBundle.loadString("assets/affirmations.csv");
+//   List<List<String>> csvTable = CsvToListConverter().convert(myData);
+//
+//   for(var i = 0; i < csvTable.length; i++){
+//     data.add(csvTable[i][0]);
+//   }
+//
+//   Random random = new Random();
+//   int randomNumber = random.nextInt(50);
+//   String affirmationList = data[randomNumber];
+//   return affirmationList;
+// }
+//
+//
+// List<String> data2 = [];
+// loadAsset2() async {
+//   final myData2 = await rootBundle.loadString("assets/quotes.csv");
+//   List<List<String>> csvTable2 = CsvToListConverter().convert(myData2);
+//
+//   for(var i = 0; i < csvTable2.length; i++){
+//     data2.add(csvTable2[i][0]);
+//   }
+//   print(data2);
+//   Random random2 = new Random();
+//   int randomNumber2 = random2.nextInt(4);
+//   String quoteList = data2[randomNumber2];
+//   print(quoteList);
+//
+//   return quoteList;
+// }
+

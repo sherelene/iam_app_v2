@@ -76,8 +76,13 @@ dependencies:
   permission_handler: ^10.2.0
 
   # Text to speech
-  flutter_tts: ^3.6.3
+  flutter_tts: ^3.5.3
+  text_to_speech: ^0.2.3
+
+  # file stuff
   csv: ^5.0.1
+  path_provider: ^2.0.2
+  file_picker: ^3.0.4
 
 
 dev_dependencies:

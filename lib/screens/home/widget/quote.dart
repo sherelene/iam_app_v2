@@ -27,7 +27,7 @@ class QuotePage extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Expanded(
-        flex :2,
+        flex :1,
         child: Container(
           padding: const EdgeInsets.only(
             left: 20,
@@ -42,8 +42,8 @@ class QuotePage extends StatelessWidget {
           ),
           child: Stack(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              Wrap(
+                //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

@@ -5,42 +5,69 @@ import 'package:i_am_v2/screens/workouts/widget/workout_card.dart';
 import 'package:flutter/material.dart';
 import 'package:i_am_v2/screens/TTS/TTS.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 
 class WorkoutContent extends StatelessWidget {
  // WorkoutContent({Key? key}) : super(key: key);
- const WorkoutContent({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: ColorConstants.homeBackgroundColor,
-      height: double.infinity,
-      width: double.infinity,
-      child: _createHomeBody(context),
-    );
-  }
+ WorkoutContent({super.key});
+ //static FlutterTts tts= FlutterTts();
 
 
-  Widget _createHomeBody(BuildContext context) {
-  var textController = TextEditingController();
-  return Scaffold(
-    body: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        TextField(
-          controller: textController,
-        ),
-      ElevatedButton(
-          onPressed: () {
-          TextToSpeech.speak(textController.text);
-         },
-         child: const Text("Speak"),
-         )
-        ]
-        )
-       );
-  }
-  }
+
+ @override
+ Widget build(BuildContext context){
+   var textController = TextEditingController();
+
+   return Scaffold(
+     body: Column(
+       mainAxisAlignment: MainAxisAlignment.center,
+       children: [
+             TextFormField(
+               controller: textController,
+             ),
+           ElevatedButton(
+             child: const Text("Speak"),
+               onPressed: () {
+               TextToSpeech.speak(textController.text);
+              },
+              )
+             ]
+     )
+   );
+ }
+}
+
+  // @override
+  // Widget build(BuildContext context) {
+  //   return Container(
+  //     color: ColorConstants.homeBackgroundColor,
+  //     height: double.infinity,
+  //     width: double.infinity,
+  //     child: _createHomeBody(context),
+  //   );
+  // }
+  //
+  //
+  // Widget _createHomeBody(BuildContext context) {
+  //   tts.setLanguage('en');
+  // return Scaffold(
+  //   body: Column(
+  //     mainAxisAlignment: MainAxisAlignment.center,
+  //     children: [
+  //       TextFormField(
+  //         controller: textController,
+  //       ),
+  //     ElevatedButton(
+  //       child: const Text("Speak"),
+  //         onPressed: () {
+  //         TextToSpeech.speak(textController.text);
+  //        },
+  //        )
+  //       ]
+  //       )
+  //      );
+  // }
+  // }
 
 
   // Widget _createHomeBody(BuildContext context) {
