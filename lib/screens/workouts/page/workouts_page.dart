@@ -1,10 +1,9 @@
+
 import 'package:i_am_v2/screens/workout_details_screen/page/workout_details_page.dart';
 import 'package:i_am_v2/screens/workouts/bloc/workouts_bloc.dart';
 import 'package:i_am_v2/screens/workouts/widget/workout_content.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:i_am_v2/screens/TTS/TTS_page.dart';
-
 
 class WorkoutsPage extends StatelessWidget {
   const WorkoutsPage({Key? key}) : super(key: key);
@@ -24,9 +23,15 @@ class WorkoutsPage extends StatelessWidget {
         },
         listenWhen: (_, currState) => currState is CardTappedState,
         listener: (context, state) {
+          if (state is CardTappedState) {
+            Navigator.of(context, rootNavigator: true).push(
+              MaterialPageRoute(
+                builder: (_) => WorkoutDetailsPage(workout: state.workout),
+              ),
+            );
+          }
         },
       ),
     );
   }
 }
-
