@@ -12,7 +12,7 @@ class OnboardingTile extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
-          const SizedBox(height: 34),
+          const SizedBox(height: 44),
           Expanded(
             child: Image.asset(
               imagePath,

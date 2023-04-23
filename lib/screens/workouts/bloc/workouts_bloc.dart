@@ -15,7 +15,8 @@ class WorkoutsBloc extends Bloc<WorkoutsEvent, WorkoutsState> {
       WorkoutsEvent event,
       ) async* {
     if (event is CardTappedEvent) {
-      yield CardTappedState(workout: event.workout);
+      yield CardTappedState();
     }
   }
 }
+

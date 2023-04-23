@@ -4,6 +4,8 @@ import 'package:i_am_v2/core/const/color_constants.dart';
 import 'package:i_am_v2/core/service/notification_service.dart';
 import 'package:i_am_v2/screens/onboarding/page/onboarding_page.dart';
 import 'package:i_am_v2/screens/tab_bar/page/tab_bar_page.dart';
+import 'package:i_am_v2/screens/TTS/TTS.dart';
+import 'package:i_am_v2/screens/TTS/TTS_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -12,6 +14,7 @@ import 'package:timezone/data/latest.dart' as tz;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+  TextToSpeech.initTTS();
   await Firebase.initializeApp();
   runApp(MyApp());
 }

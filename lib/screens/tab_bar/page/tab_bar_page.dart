@@ -1,12 +1,14 @@
 import 'package:i_am_v2/core/const/color_constants.dart';
 import 'package:i_am_v2/core/const/path_constants.dart';
 import 'package:i_am_v2/core/const/text_constants.dart';
+import 'package:i_am_v2/screens/TTS/TTS_page.dart';
 import 'package:i_am_v2/screens/home/page/home_page.dart';
 import 'package:i_am_v2/screens/settings/settings_screen.dart';
 import 'package:i_am_v2/screens/tab_bar/bloc/tab_bar_bloc.dart';
 import 'package:i_am_v2/screens/workouts/page/workouts_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:i_am_v2/screens/TTS/TTS_page.dart';
 
 class TabBarPage extends StatelessWidget {
   const TabBarPage({Key? key}) : super(key: key);

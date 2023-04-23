@@ -75,6 +75,8 @@ dependencies:
   # Permission handler
   permission_handler: ^10.2.0
 
+  # Text to speech
+  flutter_tts: ^3.6.3
 
 
 dev_dependencies:
