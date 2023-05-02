@@ -42,7 +42,7 @@ class OnboardingContent extends StatelessWidget {
     return Column(
       children: [
         SizedBox(
-          height: 30,
+          height: 10,
         ),
         BlocBuilder<OnboardingBloc, OnboardingState>(
           buildWhen: (_, currState) => currState is PageChangedState,
@@ -66,7 +66,7 @@ class OnboardingContent extends StatelessWidget {
                 tween: Tween<double>(begin: 0, end: percent),
                 duration: Duration(seconds: 1),
                 builder: (context, value, _) => CircularPercentIndicator(
-                  radius: 110,
+                  radius: 60,
                   backgroundColor: ColorConstants.primaryColor,
                   progressColor: Colors.white,
                   percent: 1 - value,
@@ -82,7 +82,7 @@ class OnboardingContent extends StatelessWidget {
                         padding: const EdgeInsets.all(24.0),
                         child: Icon(
                           Icons.east_rounded,
-                          size: 38.0,
+                          size: 18.0,
                           color: Colors.white,
                         ),
                       ),
@@ -91,7 +91,7 @@ class OnboardingContent extends StatelessWidget {
                 ));
           },
         ),
-        SizedBox(height: 30),
+        SizedBox(height: 10),
       ],
     );
   }

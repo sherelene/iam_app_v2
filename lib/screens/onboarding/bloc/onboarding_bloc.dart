@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:meta/meta.dart';
 
 part 'onboarding_event.dart';
 part 'onboarding_state.dart';
+
 
 class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
   OnboardingBloc() : super(OnboardingInitial());
@@ -27,7 +27,7 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
 
       pageController.animateToPage(
         pageIndex,
-        duration: Duration(milliseconds: 500),
+        duration: Duration(milliseconds: 100),
         curve: Curves.ease,
       );
 
