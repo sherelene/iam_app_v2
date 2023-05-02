@@ -8,10 +8,10 @@ class TextToSpeech {
 
   static initTTS(){
     tts.setLanguage("en-US");
-    tts.setSpeechRate(1); //speed of speech
+    tts.setSpeechRate(0.4); //speed of speech
     tts.setVolume(1.0); //volume of speech
     tts.setPitch(1.3);
-    tts.setVoice({"name": "Karen", "locale": "en-US"});
+    tts.setVoice({"name": "Karen", "locale": "en-AU"});
   }
 
   static speak(String text) async {
